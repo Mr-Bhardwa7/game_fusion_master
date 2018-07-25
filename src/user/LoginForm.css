@@ -1,0 +1,94 @@
+.LoginForm{
+	position: relative;
+	padding: 70px 0;
+}
+
+.LoginFormShow {
+	padding: 50px;
+	background : rgba(0,0,0,0.7);
+
+}
+.input-group{
+    margin-top:10px;
+}
+.fa{
+	font-size:20px;
+}
+.form-check{
+	margin-top:30px;
+	margin-bottom: 5px;
+}
+label{
+	color:#fff;
+}
+.middle{
+	margin-left: 30px;
+}
+ul{
+   
+    float: right;
+   
+}
+li{
+    list-style-type: none;
+    color:#fff;
+   
+}
+.wrap-button{
+    padding:50px;
+}
+.button-facebook{
+    font-family: Helvetica,sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: calc(.27548vw + 12.71074px);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s,border-color .3s;
+    background-color: #4c69ba;
+    border: calc(.06887vw + .67769px) solid #4c69ba;
+    padding: calc(.34435vw + 13.38843px) calc(.34435vw + 18.38843px);
+}
+
+.button-facebook .kep-login-facebook {
+    border: 0;
+    padding: 0;
+}
+
+.button-facebook .fa-facebook
+{
+    margin-right: 5px;
+}
+
+.button-google{
+   font-family: Helvetica,sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: calc(.27548vw + 12.71074px);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s,border-color .3s;
+    background-color: #e94c54;
+    border: calc(.06887vw + .67769px) solid #e94c54;
+    padding: calc(.34435vw + 13.38843px) calc(.34435vw + 26.38843px);
+    margin-top: 20px;
+}
+.social{
+    color:#fff;
+    padding-left:10px;
+}
+.login_footer{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.control-label {
+    display: none;
+    color: #e94c54;
+}

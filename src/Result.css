@@ -1,0 +1,81 @@
+.resultMain{
+	padding: 50px 0;
+}
+.result_header {
+	width: 80%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 100px;
+	background: #007bff;
+}
+.resultdisplay{
+	background: rgba(0,0,0,0.7);
+	padding: 80px 50px;
+	text-align: center;
+}
+.resultbox{
+	padding: 20px;
+	background: #fff;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+	border-radius: 25px;
+}
+.middle_pannel{
+	padding: 50px 0;
+}
+
+.result_vs{
+	background: #007bff;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	margin-top: 30px;
+}
+.resultbox span{
+	position: absolute;
+	top: -25px;
+	right: -7px;
+	background-color: #ffdf00;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
+	padding: 25px;
+}
+.img{
+	height: 200px;
+	width: 200px;
+}
+.img1{
+	width: 20px;
+	height: 20px;
+}
+
+.rematch-button{
+	text-align: center;
+}
+
+.home{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.rematch{
+	margin-top: 10px;
+}
+
+.text{
+	font-size: 30px;
+	font-weight: 30px;
+}
+.text1{
+	font-size: 50px;
+	font-weight: 30px;
+	margin-top: 60px;
+}

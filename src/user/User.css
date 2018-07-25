@@ -1,0 +1,118 @@
+.user_profile{
+	
+	padding: 60px 0 40px 0;
+	position: relative;
+}
+.box{
+	padding: 60px 50px;
+	background: #1c1c1c;
+}
+.user_profile_header{
+	position: absolute;
+	height: 80px;
+	width: 80%;
+	background: #007bff;
+	left: 10%;
+	margin-top: -40px;
+	text-align: center;
+}
+.profile{
+	margin-top: 110px;
+}
+.user_profile_header h2{
+	
+	color: #fff;
+	font-weight: 900;
+	font-size: 30px;
+	padding-top: 15px;
+}
+.user_profile h2{
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+}
+.user_profile span{
+	color: #fff;
+	font-size: 22px;
+	display: block;
+	padding-top: 20px;
+}
+
+.fa-icon {
+	font-size: 60px;
+}
+.user_profile span img{
+	height: 70px;
+}
+.user_profile h1{
+	margin-top: 20px;
+	margin-bottom: -10px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	position: relative;
+}
+.user_profile h1::after{
+	content: "";
+	background-color:  #fff;
+	height: 3px;
+	width: 70px;
+	left: 50%;
+	top: 120%;
+	margin-left: -35px;
+	position: absolute;
+}
+.profile_Status{
+	padding: 20px;
+	margin: 10px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;	
+}
+
+.profile_Status span {
+	color: #ffdf00;
+	font-size: 60px;
+	
+}
+.profile_Status p{
+	
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+.profile_box{
+	margin-top: 35px;
+}
+
+.xp{
+	margin-left: 18%;
+	font-size: 18px;
+}
+.progressbar-container{
+	background-color: #fff;
+}
+
+.profile-pic{position: relative;}
+.profile-pic:hover .edit{display: block;}
+.edit{position: absolute; bottom: 5%; right: 10%; display: none;}
+.edit {color: #000; cursor: pointer;}
+
+.transition-enter {
+  transform: scale(0);
+}
+.transition-enter-active {
+  transform: scale(1);
+  transition: transform 1000ms ease;
+}
+.transition-exit {
+  transform: scale(1);
+}
+.transition-exit-active {
+  transform: scale(0);
+  transition: transform 1000ms ease;
+}
+
+
+

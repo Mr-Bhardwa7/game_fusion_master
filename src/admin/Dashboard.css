@@ -1,0 +1,96 @@
+.adminPanel{
+	padding: 80px 0 40px 0;
+	position: relative;
+}
+.dashboard-heading {
+	position: absolute;
+	height: 80px;
+	width: 80%;
+	background: #007bff;
+	left: 10%;
+	margin-top: -40px;
+	text-align: center;
+}
+
+.dashboard-heading h2{
+	
+	color: #fff;
+	font-weight: 900;
+	font-size: 30px;
+	padding-top: 15px;
+}
+.adminService{
+	
+	margin-top: 40px;
+}
+.adminService .icons{
+	color: #b7c72c;
+	font-size: 28px;
+}
+.dashboard{
+	margin-top: 40px;	
+	color: #fff;
+}
+ .dashboardbox{
+ 	margin: 10px;
+	padding: 20px 10px 5px 0;
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid yellow;
+}
+.dashboardbox span{
+	color: #000;
+	font-weight: 900;
+
+}
+
+.headerdashboard{
+	border-top: 1px solid yellow;
+	margin-top: 50px;
+	position: relative;
+	
+}
+
+.headerdashboard span {
+	cursor: pointer;
+}
+
+.totalcount{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+	margin-top: -30px;
+	font-size: 3em;
+}
+
+.footerpanel{
+	color: #000;
+	margin-left:  40px;
+	margin-top: 8px;
+	font-size: 18px;
+    font-weight: 900;
+}
+.icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+	margin: 8px 20px 0 0;
+}
+
+.list-group-item {
+	color: #000;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 991px){
+	.headerdashboard {
+		margin-top: 40px;
+	}
+	.footerpanel{
+		margin: 0;
+		padding-left: 10px;
+	}
+}

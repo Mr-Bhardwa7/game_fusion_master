@@ -1,0 +1,72 @@
+.challenge {
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
+
+.challenge_header {
+	width: 80%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: -40px;
+	background: #007bff;
+}
+
+.agileinfo-team-grid {
+	position: relative;
+	overflow: hidden;
+}
+
+.agileinfo-team-grid img {
+	max-width: 100%;
+}
+
+.online {
+	width: 250px;
+	height: 170px;
+	border: 3px solid #1c1c1c;
+	
+}
+
+.captn {
+	background: rgba(0, 0, 0, 0.4);
+	padding: 1em;
+	position: absolute;
+	left: 10%;
+	bottom: -100%;
+	text-align: center;
+	width: 150px;
+	height: 109px;
+	-webkit-transition: .5s all;
+	transition: .5s all;
+	-moz-transition: .5s all;
+}
+
+.captn h4 {
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.captn h5 {
+	line-height: 2em;
+	color: #fff;
+}
+
+.agileinfo-team-grid:hover .captn {
+	bottom: 18%;
+}
+
+.team-grids:nth-child(2) {
+	padding: .3em 0;
+}
+
+.w3l-thead {
+	background: #007bff;
+}
+
+.wt1 {
+	background: #cd2029;
+}

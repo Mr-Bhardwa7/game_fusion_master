@@ -1,0 +1,26 @@
+.formheader{
+	margin-top: 40px;
+	padding-bottom: 20px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.formheader h2{
+	padding: 5px;
+	text-align: center;
+	background: #037afc;
+	color: #fff;
+	font-weight: 900;
+	border-radius: 5px 5px 0 0;
+}
+form{
+	padding: 40px;
+}
+form  label{
+	margin-left: 30px;
+}
+
+.control-label {
+	display: none;
+	color: #e94c54;
+}

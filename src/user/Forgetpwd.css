@@ -1,0 +1,43 @@
+.forget-pwd{
+	position: relative;
+	padding: 70px 0;
+}
+
+.forget-show{
+	padding: 10px;
+	background : rgba(0,0,0,0.7);
+
+}
+.wrapping{
+	padding: 25px;
+	
+}
+.pannel-center{
+	text-align: center;
+}
+img{
+   width: 150px;
+   height: 150px;
+}
+h1,h3{
+	color:#fff;
+}
+
+.center{
+	width:60%;
+	margin:0 auto;
+}
+@media screen and (max-width: 767px) {
+  .input-group{
+
+  }
+}
+/*center-block {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+#forget-btn{
+	margin-top: 20px;
+
+}

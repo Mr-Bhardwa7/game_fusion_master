@@ -1,0 +1,74 @@
+
+header h1 {
+    line-height: 0;
+}
+
+.navbar-light {
+    padding: 1em 5em;
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+span.navbar-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+.circle-info {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ccc;
+    text-align: center;
+}
+
+.coins {
+    width: 25px;
+    height: 25px;
+}
+
+.profileIcon {
+    width: 38px;
+    height: 38px;
+}
+
+.coins_result {
+    width: 40px;
+    height: 40px;
+}
+
+header h1 span {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #1c1c1c;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+.w3ls-btn {
+    letter-spacing: 2px;
+    height: 54px;
+    font-weight: 600;
+}

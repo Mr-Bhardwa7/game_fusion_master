@@ -1,0 +1,78 @@
+
+
+#fixed-social {
+	position: fixed;
+	top: 32%;
+	right: 40px;
+	z-index: 9;
+}
+
+#fixed-social a {
+	color: #fff;
+	display: block;
+	height: 40px;
+	position: relative;
+	text-align: center;
+	line-height: 40px;
+	width: 40px;
+	margin-bottom: 1px;
+	z-index: 2;
+}
+
+#fixed-social a:hover>span {
+	visibility: visible;
+	right: 41px;
+	opacity: 1;
+}
+
+#fixed-social a span {
+	line-height: 40px;
+	right: 60px;
+	position: absolute;
+	text-align: center;
+	width: 120px;
+	visibility: hidden;
+	transition-duration: 0.5s;
+	z-index: 1;
+	opacity: 0;
+}
+
+.fixed-facebook {
+	background-color: #3a589e;
+}
+
+.fixed-facebook span {
+	background-color: #3a589e;
+}
+
+.fixed-twitter {
+	background-color: #429cd6;
+}
+
+.fixed-twitter span {
+	background-color: #429cd6;
+}
+
+.fixed-gplus {
+	background-color: #cd2029;
+}
+
+.fixed-gplus span {
+	background-color: #cd2029;
+}
+
+.fixed-linkedin {
+	background-color: #0d77b7;
+}
+
+.fixed-linkedin span {
+	background-color: #0d77b7;
+}
+
+.fixed-pintrest {
+	background-color: #dc143c;
+}
+
+.fixed-pintrest span {
+	background-color: #dc143c;
+}

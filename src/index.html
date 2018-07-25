@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+	
+/*header*/
+header{padding: 24px 0; background: #fff; position: relative;}
+
+nav{padding-top: 18px; float: right;}
+nav ul li {margin: 0; padding: 0;}
+nav ul li{display: inline; padding: 19px; color: #000; text-decoration: none; text-transform: uppercase;}
+nav ul li:hover{color: #099ee0; text-decoration: none; position: relative;}
+nav ul li:hover::before{content:''; position: absolute; left: 46%; bottom:100%;  width: 5px; height: 5px; background-color: #099ee0; border-radius: 50%;}
+nav ul li:hover::after{content:''; position: absolute; left: 46%; top:100%;  width: 5px; height: 5px; background-color: #099ee0; border-radius: 50%;}
+
+
+.active{position: relative;}
+.active li{color:#099ee0;}
+.active li::before{content:''; position: absolute; left: 46%; bottom:70%;  width: 5px; height: 5px; background-color: #099ee0; border-radius: 50%;}
+.active li::after{content:''; position: absolute; left: 46%; top:70%;  width: 5px; height: 5px; background-color: #099ee0; border-radius: 50%;}
+
+nav ul li:last-child span{border: 1px solid #b0b0b0; color: #b0b0b0; height:35px; width:35px; text-align: center; line-height: 33px; display: inline-block; border-radius: 50%; margin-right: 10px;  }
+nav ul li:last-child span:last-child{background: #099ee0; color: #fff; position: relative;}
+
+nav ul li:last-child span:hover{background: #099ee0; color: #fff; }
+
+.menu-toggle{display: inline-block; cursor: pointer; position: absolute; top:50%; left: 80%;}
+.bar1, .bar2, .bar3 {width: 35px; height: 5px; background-color: #333; margin: 6px 0; transition: 0.4s;}
+.change .bar1 {-webkit-transform: rotate(-45deg) translate(-9px, 6px); transform: rotate(-45deg) translate(-9px, 6px);}
+.change .bar2 {opacity: 0;}
+.change .bar3 {-webkit-transform: rotate(45deg) translate(-8px, -8px); transform: rotate(45deg) translate(-8px, -8px);}
+
+
+
+</style>
+
+</head>
+<body>
+
+	<header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+                        <div class="logo"><img src="img/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9">
+                        <nav class="hidden-xs hidden-sm hidden-md">
+                            <ul>
+                                <li class="active">Home</li>
+                                <li>About us</li>
+                                <li>Shop</li>
+                                <li>Repair</li>
+                                <li>Blog</li>
+                                <li>Faq</li>
+                                <li>Contct us</li>
+                                <li>
+                                <span><i class="fa fa-search"></i></span>
+                                <span><i class="fa fa-user"></i></span>   
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu-toggle hidden-lg" onclick="myFunction(this)">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</body>
+</html>

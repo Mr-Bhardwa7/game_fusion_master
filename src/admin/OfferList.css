@@ -1,0 +1,10 @@
+.tab{
+	background: #037afc;
+	color: #fff;
+	border: 1px solid yellow;
+	text-align: center;
+}
+tbody{
+	background: #fff;
+	color: #000;
+}

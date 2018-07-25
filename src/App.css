@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+	margin: 0;
+	color: #777;
+	font-size: 1em;
+	line-height: 1.6;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+
+.mainbox {
+	background: #1c1c1c;
+	padding: 90px 30px 20px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.heading {
+	position: absolute;
+	height: 80px;
+	width: 80%;
+	background: #007bff;
+	left: 10%;
+	margin-top: -40px;
+	text-align: center;
+}
+
+.heading h2 {
+	color: #fff;
+	font-weight: 900;
+	font-size: 30px;
+	padding-top: 15px;
+}

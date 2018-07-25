@@ -1,0 +1,59 @@
+.coinsoffer {
+	padding: 80px 0 40px 0;
+	position: relative;
+}
+.coins-offer-heading{
+	position: absolute;
+	height: 80px;
+	width: 80%;
+	background: #007bff;
+	left: 10%;
+	margin-top: -40px;
+	text-align: center;
+}
+.coins-offer-heading h2{
+	color: #fff;
+	font-weight: 900;
+	font-size: 30px;
+	padding-top: 15px;
+
+}
+.best-deal{
+	text-align: center;
+	color: yellow;
+	font-weight: 500;
+	border-bottom: 1px solid yellow;
+	padding: 0px  0 10px 0;
+}
+.offer {
+	position: relative;
+	border :1px solid yellow;
+	margin-top: 50px;
+	color: #fff;
+	padding: 40px;
+	font-size: 22px;
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	border-radius:  10px;
+}
+.offer label {
+	position: absolute;
+	padding: 10px;
+	color: #000;
+	top: 0;
+	right: 0;
+	background: yellow;
+	border-radius: 10px;
+	margin: -20px;
+	font-weight: 900;
+}
+.offer span img{
+	width: 40px;
+}
+.offer button {
+	margin-top: 30px;
+}
+
+.paypal-button {
+	margin-top: 30px;
+}
