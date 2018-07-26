@@ -111,10 +111,6 @@
 .rectangleBox{
   background-color: #fff;
   border-bottom: 5px solid #007bff;
-  position: absolute;
-  right: 9%;
-  bottom: 4%;
-  transform: translate(-9%,-4%);
   padding: 5px;
   width: 120px;
   border-radius: 12px;
@@ -226,6 +222,10 @@
   right: 80px;
   top: 35px;
 
+}
+
+.coinDisplay {
+  text-align: center;
 }
 
 

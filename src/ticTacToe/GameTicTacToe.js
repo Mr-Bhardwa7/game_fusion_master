@@ -858,9 +858,15 @@ class GameTicTacToe extends Component {
 									</div>
 								</div>
 							</div>
-							<div className="rectangleBox">
-								<img src={coins}  className="coins1" alt=""/>
-								<span>{amount}</span>
+							<div className="coinDisplay">
+								<div className="row">
+                    				<div className="col-md-12 col-sm-12">
+										<div className="rectangleBox">
+											<img src={coins}  className="coins1" alt=""/>
+											<span>{amount}</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
