@@ -221,3 +221,16 @@
 .full-width {
   width: 100%;
 }
+
+@media only screen and (max-width: 420px) {
+    .core2{
+      width:200px;
+      height: 200px;
+      margin-top:40px;
+    }
+
+    .case_container{
+      width:300px;
+      height: 300px;
+    }
+}

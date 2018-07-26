@@ -101,7 +101,7 @@ class Result extends Component {
 
     if (localStorage.getItem('challenge-player1pic') != 'null') {
       var picture = localStorage.getItem('challenge-player1pic');
-      var image = `http://localhost:5000/${picture}`;
+      var image = `${baseUrl}/${picture}`;
       var name = localStorage.getItem('challenge-player1name');
         pic1 = <img src={image} alt={name} className="userImg img" />; 
       }else{
@@ -110,7 +110,7 @@ class Result extends Component {
 
       if (localStorage.getItem('challenge-player2pic') != 'null') {
       var picture = localStorage.getItem('challenge-player2pic');
-      var image = `http://localhost:5000/${picture}`;
+      var image = `${baseUrl}/${picture}`;
       var name = localStorage.getItem('challenge-player2name');
         pic2 = <img src={image} alt={name} className="userImg img" />; 
       }else{

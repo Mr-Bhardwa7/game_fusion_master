@@ -9,6 +9,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
 p {
 	margin: 0;
 	color: #777;
@@ -49,4 +51,18 @@ ul {
 	font-weight: 900;
 	font-size: 30px;
 	padding-top: 15px;
+}
+
+.navbar-toggler {
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+}
+
+.navbar-light {
+    width: 100%;
+    left: 0;
+    background: #000;
 }

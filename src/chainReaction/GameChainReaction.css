@@ -4,8 +4,8 @@
 }
 
 .board {
-    width: 45%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 50px auto;
     background: #f1f1f1;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
 }
@@ -16,12 +16,12 @@
 }
 
 .board .table .table-row {
-    display: table-row;
+    width: 100%;
 }
 
 .board .table .table-cell {
-    display: table-cell;
-    width: 100px;
+    float: left;
+    width: 16.66%;
     height: 90px;
     border:solid 7px #41403E;
     border-top: none;
@@ -32,8 +32,8 @@
 }
 
 .board .table .table-cell-palyer1 {
-    display: table-cell;
-    width: 100px;
+    
+    width: 16.66%;
     height: 90px;
      border:solid 7px rgba(255, 0, 0,1);
     border-top: none;
@@ -45,8 +45,8 @@
 
 .board .table .table-cell-palyer2 {
   
-  display: table-cell;
-    width: 100px;
+  
+    width: 16.66%;
     height: 90px;
     border:solid 7px rgba(0, 51, 204,1);
     border-top: none;
@@ -227,3 +227,24 @@
   top: 35px;
 
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .board {
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+  .board {
+    width: 100%;
+  }
+  
+}
+
+
+
+

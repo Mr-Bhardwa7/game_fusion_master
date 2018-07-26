@@ -142,7 +142,7 @@ fileChangedHandler = (event) => {
   	const { open } = this.state;
   	var picture,winningPercentage;
   	if (this.state.profile_pic !== null) {
-  		var image = `http://localhost:5000/${this.state.profile_pic}`
+  		var image = `${baseUrl}/${this.state.profile_pic}`
   		picture = <img src={image} alt={this.state.userName} className="img-thumbnail" />; 
   	}
   	if(this.state.profile_pic === null){

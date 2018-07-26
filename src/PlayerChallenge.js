@@ -120,7 +120,7 @@ constructor(props)
 			{
 				if(title.userProfilePath !== null)
 				{
-					var image = `http://localhost:5000/${title.userProfilePath}`
+					var image = `${baseUrl}/${title.userProfilePath}`
 					profileExist = <div className="col-lg-2 col-md-4 col-sm-6 col-6 online agileinfo-team-grid p-0">
 						                    <img src={image} alt={title.userName} />;
 						                    <div className="captn">

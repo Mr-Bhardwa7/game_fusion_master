@@ -734,14 +734,14 @@ class GameTicTacToe extends Component {
 		}
 
 		if (this.state.player1pic !== null) {
-			var image = `http://localhost:5000/${this.state.player1pic}`;
+			var image = `${baseUrl}/${this.state.player1pic}`;
 	  		pic1 = <img src={image} alt={player1name} className="userImg" />; 
 	  	}else{
 	  		pic1 = <img src = {avtar} alt="" className="userImg" />;
 	  	}
 
 	  	if (this.state.player2pic !== null) {
-			var image = `http://localhost:5000/${this.state.player2pic}`;
+			var image = `${baseUrl}/${this.state.player2pic}`;
 	  		pic2 = <img src={image} alt={player2name} className="userImg" />; 
 	  	}else{
 	  		pic2 = <img src = {avtar} alt="" className="userImg" />;
