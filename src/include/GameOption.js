@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
+import {baseUrl} from './../helpers/envHelper';
+import axios from 'axios';
 import './GameOption.css'
 import image_cr_option1 from './../assets/images/game-cr-option-10.png';
 import image_cr_option2 from './../assets/images/game-cr-option-50.png';
@@ -34,6 +37,118 @@ class GameOption extends Component {
   		}
 	}
 
+	checkUserCoin = (event) => {
+		var id = event.target.id;
+		var coinCheck;
+
+		new Promise((resolve,reject) => {
+            const instance = axios.create({
+                timeout: 1000,
+                headers: {'X-Custom-Header': 'foobar','Authorization' : localStorage.getItem('token') || ''}
+            });
+            instance.post(baseUrl + '/api/user-coin',{userid : localStorage.getItem('user-id')})
+              .then((response)=> {
+                  console.log("coin coin",response.data.data[0].currentCoins);
+                  if(response.data.error === false)
+                  {
+                  	if(id === 'opt1')
+					{
+						coinCheck = 9;
+                  		if(response.data.data[0].currentCoins > coinCheck)
+                  		{
+                  			this.props.history.push(`/challenge/${this.state.option1.value}`)
+                  		} else 
+                  		{
+                  			 swal("Opps! You don't have enough coin to play this match, Purchase coins to continue.",{
+						      buttons: {
+						      cancel: "Not Now",
+						      catch: {
+						        text: "Purchase Now",
+						        value: "catch",
+						        },
+						      },
+						    })
+                  			 .then((value) => {
+								      switch (value) {
+								                  
+								        case "catch":
+								        this.props.history.push('/coin-offer');
+								        break;
+
+								        default:
+								        break;
+								    }
+								});
+                  		}
+					} else if( id === 'opt2')
+					{
+						coinCheck = 49;
+						if(response.data.data[0].currentCoins > coinCheck)
+                  		{
+                  			this.props.history.push(`/challenge/${this.state.option2.value}`)
+                  		}
+                  		 else 
+                  		{
+                  			 swal("Opps! You don't have enough coin to play this match, Purchase coins to continue.",{
+						      buttons: {
+						      cancel: "Not Now",
+						      catch: {
+						        text: "Purchase Now",
+						        value: "catch",
+						        },
+						      },
+						    })
+                  			 .then((value) => {
+								      switch (value) {
+								                  
+								        case "catch":
+								        this.props.history.push('/coin-offer');
+								        break;
+
+								        default:
+								        break;
+								    }
+								});                  		}
+					} else if(id === 'opt3')
+					{
+						coinCheck = 99;
+						if(response.data.data[0].currentCoins > coinCheck)
+                  		{
+                  			this.props.history.push(`/challenge/${this.state.option3.value}`)
+                  		}
+                  		 else 
+                  		{
+                  			 swal("Opps! You don't have enough coin to play this match, Purchase coins to continue.",{
+						      buttons: {
+						      cancel: "Not Now",
+						      catch: {
+						        text: "Purchase Now",
+						        value: "catch",
+						        },
+						      },
+						    })
+                  			 .then((value) => {
+								      switch (value) {
+								                  
+								        case "catch":
+								        this.props.history.push('/coin-offer');
+								        break;
+
+								        default:
+								        break;
+								    }
+								});
+                  		}
+					}
+                      
+                  }
+
+                  resolve();
+              });                
+          });
+
+	}
+
 	render() {
 		
 		return(
@@ -45,12 +160,12 @@ class GameOption extends Component {
 							<div className="full-width">
 							  <div className="arc_reactor">
 							    <div className="case_container center-block">
-							    <Link to={`/challenge/${this.state.option1.value}`}>
+							   
 							      <div className="e7">
 							        <div className="semi_arc_3 e5_1">
 							          <div className="semi_arc_3 e5_2">
 							            <div className="semi_arc_3 e5_3">
-							              <div className="semi_arc_3 e5_4">
+							              <div className="semi_arc_3 e5_4" id="opt1" onClick={this.checkUserCoin}>
 							              </div>
 							            </div>
 							          </div>
@@ -59,7 +174,7 @@ class GameOption extends Component {
 							        	<img src={this.state.option1.img} className="core2-img center-block" alt="img" />
 							        </div>
 							      </div>
-							      </Link>
+							    
 							    </div>
 							  </div>
 							</div>
@@ -69,12 +184,11 @@ class GameOption extends Component {
 							<div className="full-width">
 							  <div className="arc_reactor">
 							    <div className="case_container center-block">
-							     <Link to={`/challenge/${this.state.option2.value}`}>
 							      <div className="e7">
 							        <div className="semi_arc_3 e5_1">
 							          <div className="semi_arc_3 e5_2">
 							            <div className="semi_arc_3 e5_3">
-							              <div className="semi_arc_3 e5_4">
+							              <div className="semi_arc_3 e5_4" id="opt2" onClick={this.checkUserCoin}>
 							              </div>
 							            </div>
 							          </div>
@@ -83,7 +197,6 @@ class GameOption extends Component {
 							        	<img src={this.state.option2.img} className="core2-img center-block" alt="img" />
 							        </div>
 							      </div>
-							      </Link>
 							    </div>
 							  </div>
 							</div>
@@ -93,12 +206,11 @@ class GameOption extends Component {
 							<div className="full-width">
 							  <div className="arc_reactor">
 							    <div className="case_container center-block">
-							    <Link to={`/challenge/${this.state.option3.value}`}>
 							      <div className="e7">
 							        <div className="semi_arc_3 e5_1">
 							          <div className="semi_arc_3 e5_2">
 							            <div className="semi_arc_3 e5_3">
-							              <div className="semi_arc_3 e5_4">
+							              <div className="semi_arc_3 e5_4" id="opt3" onClick={this.checkUserCoin}>
 							              </div>
 							            </div>
 							          </div>
@@ -107,7 +219,6 @@ class GameOption extends Component {
 							        	<img src={this.state.option3.img} className="core2-img center-block" alt="img" />
 							        </div>
 							      </div>
-							      </Link>
 							    </div>
 							  </div>
 							</div>

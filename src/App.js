@@ -196,7 +196,7 @@ class App extends Component {
   }
 
   render() {
-    console.log = function(){};
+    
   let path = window.location.href;
   var pathIndex = path.split('/');
   let header = <Header />;
